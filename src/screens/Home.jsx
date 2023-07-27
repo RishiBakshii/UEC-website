@@ -4,6 +4,7 @@ import { Footer } from '../components/Footer'
 import { Box, styled,Typography,Stack,Grid} from '@mui/material'
 import theme from '../theme'
 import { Cards } from '../components/Cards'
+import { Back } from '../assets/Back'
 
 
 const MainSection=styled('main')({
@@ -66,6 +67,10 @@ export const Home = () => {
             </Grid>
 
         </UspSection>
+
+        <Box bgcolor={'red'}>
+            <Back/>
+        </Box>
 
         
 
