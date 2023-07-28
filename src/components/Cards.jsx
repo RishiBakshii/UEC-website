@@ -3,7 +3,7 @@ import {Card,CardActionArea,CardContent,Typography,CardMedia} from '@mui/materia
 
 export const Cards = ({title,content,img}) => {
   return (
-    <Card sx={{ maxWidth: 300 }}>
+    <Card sx={{ maxWidth: 300 ,boxShadow:"0 0 1rem 1px #19191919"}}>
       <CardActionArea>
         <CardMedia
           component="img"

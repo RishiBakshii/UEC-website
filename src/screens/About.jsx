@@ -5,7 +5,6 @@ import { Box ,Typography, styled,Stack} from '@mui/material'
 import { m } from 'framer-motion'
 import theme from '../theme'
 import about from '../assets/about.svg'
-import about2 from '../assets/about2.svg'
 import { Accordians } from '../components/Accordians'
 
 
