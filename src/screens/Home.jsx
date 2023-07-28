@@ -4,7 +4,11 @@ import { Footer } from '../components/Footer'
 import { Box, styled,Typography,Stack,Grid} from '@mui/material'
 import theme from '../theme'
 import { Cards } from '../components/Cards'
-import { Back } from '../assets/Back'
+import background from '../assets/background.svg'
+import landing from '../assets/landing.svg'
+import usp from '../assets/usp.svg'
+import Lottie from 'lottie-react'
+import truck from '../assets/animations/truck.json'
 
 
 const MainSection=styled('main')({
@@ -18,17 +22,23 @@ const MainSection=styled('main')({
 
 const LandingSection=styled(Box)(({theme})=>({
     width:"100%",
-    display:"flex",
-    height:"40rem",
-    justifyContent:'center',
-    alignItems:'center',
+    height:'52rem',
     color:theme.palette.fontColor.light,
     backgroundColor:theme.palette.secondary.main,
-    flexDirection:"column",
-    padding:"4rem"
+    display:"flex",
+    justifyContent:'center',
+    alignItems:'center',
+    flexDirection:"row",
+    padding:"4rem 17vw",
+    backgroundImage:`url(${landing})`,
+    backgroundRepeat:"no-repeat",
+    backgroundSize:"cover",
+    aspectRatio:"1000/600",
+    backgroundPositionY:"+40%",
+
 }))
 
-const UspSection=styled(Box)(({theme})=>({
+export const UspSection=styled(Box)(({theme})=>({
     color:theme.palette.fontColor.light,
     backgroundColor:theme.palette.primary.main,
     width:"100%",
@@ -36,9 +46,15 @@ const UspSection=styled(Box)(({theme})=>({
     padding:"4rem 2rem",
     flexDirection:"column",
     justifyContent:'flex-start',
-    alignItems:"center"
+    alignItems:"center",
+    backgroundImage:`url(${usp})`,
+    backgroundRepeat:"no-repeat",
+    backgroundSize:"cover",
+    aspectRatio:"900/600",
 
 }))
+
+
 
 
 
@@ -50,10 +66,17 @@ export const Home = () => {
     <MainSection>
         
         <LandingSection>
-            <Stack>
+            <Stack flex={1}>
             <Typography fontWeight={800} variant='h4'>DISCOVER THE POWER OF PRECISION</Typography>
-            <Typography variant='h5'>Unparralled Quality and Performance</Typography>
+            <Typography gutterBottom variant='h5'>Unparralled Quality and Performance</Typography>
+            <Typography variant='p'>Experience the difference of our visionary approach as we provide cutting-edge solutions through our premium quality bearings</Typography>
             </Stack>
+
+            <Stack flex={1}>
+                <Lottie width={'5rem'} animationData={truck}></Lottie>
+
+            </Stack>
+
         </LandingSection>
 
         <UspSection>
@@ -67,12 +90,6 @@ export const Home = () => {
             </Grid>
 
         </UspSection>
-
-        <Box bgcolor={'red'}>
-            <Back/>
-        </Box>
-
-        
 
     </MainSection>
 
