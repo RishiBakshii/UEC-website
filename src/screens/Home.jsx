@@ -11,6 +11,9 @@ import Lottie from 'lottie-react'
 import truck from '../assets/animations/truck.json'
 import VanillaTilt from 'vanilla-tilt'
 import { ProductCards } from '../components/ProductCards'
+import SphericalRollerBearing from '../assets/bearingspng/SphericalRollerBearing.png'
+import CylindricalRollerBearing from '../assets/bearingspng/CylindricalRollerBearing.png'
+import { ProductStack } from '../components/ProductStack'
 
 
 const MainSection=styled('main')({
@@ -61,7 +64,6 @@ const CatalogSection=styled('section')(({theme})=>({
     backgroundColor:theme.palette.secondary.main,
     width:"100%",
     display:'flex',
-    padding:"4rem 2rem",
     justifyContent:"center",
     alignItems:"center",
     backgroundImage:`url(${Catalog})`,
@@ -82,7 +84,7 @@ export const Home = () => {
             max: 25,
             speed: 400,
             glare: true,
-            'max-glare': 0.5,
+            'max-glare': 0.1,
           });
     },[])
   return (
@@ -119,15 +121,14 @@ export const Home = () => {
         </UspSection>
 
         <CatalogSection>
-            <Typography gutterBottom mt={6} color={theme.palette.fontColor.light} variant='h3' fontWeight={"300"}>Explore Our Versatile Range</Typography>
-            <Grid mt={30} container justifyContent={'center'} alignContent={"center"} spacing={3}>
-                <Grid className='card' item><ProductCards name={'SPHERICAL ROLLER BEARINGS'} img={"https://w7.pngwing.com/pngs/646/316/png-transparent-spherical-roller-thrust-bearing-ball-bearing-tapered-roller-bearing-ball-bearing-ball-bearing-sports-thumbnail.png"}/></Grid>
-                <Grid className='card' item><ProductCards name={'CYLINDRICAL ROLLER BEARINGS'} img={"https://w7.pngwing.com/pngs/681/1022/png-transparent-car-rolling-element-bearing-ball-bearing-grease-bearing-gemstone-ring-bearing-thumbnail.png"}/></Grid>
-                <Grid className='card' item><ProductCards name={'TAPER ROLLER BEARINGS'} img={"https://e7.pngegg.com/pngimages/1024/196/png-clipart-ball-bearing-rolling-element-bearing-tapered-roller-bearing-needle-roller-bearing-others-miscellaneous-company-thumbnail.png"}/></Grid>
-                <Grid className='card' item><ProductCards name={'BALL BEARINGS'} img={"https://w7.pngwing.com/pngs/822/385/png-transparent-ball-bearing-thrust-bearing-nsk-business-business-people-bearing-ball-bearing-thumbnail.png"}/></Grid>
-                <Grid className='card' item><ProductCards name={"THRUST BEARINGS"} img={"https://w7.pngwing.com/pngs/822/385/png-transparent-ball-bearing-thrust-bearing-nsk-business-business-people-bearing-ball-bearing-thumbnail.png"}/></Grid>
-            </Grid>
+            <Typography mb={20} gutterBottom mt={6} color={theme.palette.fontColor.light} variant='h3' fontWeight={"300"}>Explore Our Versatile Range</Typography>
             
+            <ProductStack name={"Spherical Roller Bearings"} desc={"Experince the epitome of perfomance wiht uec's exceptiona range of spherical roller bearings. Engiinred to exel in even the most demanding industrial application, our bearings deliver unparallred realiabilty, longivity and accuracy. built with carful attentation to detail ,  uec ensuers every bearings exceedcs industry standards, delivering unmatched strength and smooth operation. Engineered to against heavy loads and harsh envirmonets, our spherial roller bearings gurantee optimal perforamnce, minimize downtime ,maximise prodictivity.With UEC, you can trust that your machinery will operate at its peak, backed by our commitemetn to uncompromiosing quality. Elevate your machinery performacne with UEC's spherical roller breaings - just made for you"} img={SphericalRollerBearing}/>
+            <ProductStack name={"Cylindrical Roller Bearings"} desc={"Experince the epitome of perfomance wiht uec's exceptiona range of spherical roller bearings. Engiinred to exel in even the most demanding industrial application, our bearings deliver unparallred realiabilty, longivity and accuracy. built with carful attentation to detail ,  uec ensuers every bearings exceedcs industry standards, delivering unmatched strength and smooth operation. Engineered to against heavy loads and harsh envirmonets, our spherial roller bearings gurantee optimal perforamnce, minimize downtime ,maximise prodictivity.With UEC, you can trust that your machinery will operate at its peak, backed by our commitemetn to uncompromiosing quality. Elevate your machinery performacne with UEC's spherical roller breaings - just made for you"} img={CylindricalRollerBearing}/>
+            <ProductStack name={"Taper Roller Bearings"} desc={"Experince the epitome of perfomance wiht uec's exceptiona range of spherical roller bearings. Engiinred to exel in even the most demanding industrial application, our bearings deliver unparallred realiabilty, longivity and accuracy. built with carful attentation to detail ,  uec ensuers every bearings exceedcs industry standards, delivering unmatched strength and smooth operation. Engineered to against heavy loads and harsh envirmonets, our spherial roller bearings gurantee optimal perforamnce, minimize downtime ,maximise prodictivity.With UEC, you can trust that your machinery will operate at its peak, backed by our commitemetn to uncompromiosing quality. Elevate your machinery performacne with UEC's spherical roller breaings - just made for you"} img={SphericalRollerBearing}/>
+            <ProductStack name={"Ball Roller Bearings"} desc={"Experince the epitome of perfomance wiht uec's exceptiona range of spherical roller bearings. Engiinred to exel in even the most demanding industrial application, our bearings deliver unparallred realiabilty, longivity and accuracy. built with carful attentation to detail ,  uec ensuers every bearings exceedcs industry standards, delivering unmatched strength and smooth operation. Engineered to against heavy loads and harsh envirmonets, our spherial roller bearings gurantee optimal perforamnce, minimize downtime ,maximise prodictivity.With UEC, you can trust that your machinery will operate at its peak, backed by our commitemetn to uncompromiosing quality. Elevate your machinery performacne with UEC's spherical roller breaings - just made for you"} img={SphericalRollerBearing}/>
+            <ProductStack name={"Thrust Roller Bearings"} desc={"Experince the epitome of perfomance wiht uec's exceptiona range of spherical roller bearings. Engiinred to exel in even the most demanding industrial application, our bearings deliver unparallred realiabilty, longivity and accuracy. built with carful attentation to detail ,  uec ensuers every bearings exceedcs industry standards, delivering unmatched strength and smooth operation. Engineered to against heavy loads and harsh envirmonets, our spherial roller bearings gurantee optimal perforamnce, minimize downtime ,maximise prodictivity.With UEC, you can trust that your machinery will operate at its peak, backed by our commitemetn to uncompromiosing quality. Elevate your machinery performacne with UEC's spherical roller breaings - just made for you"} img={SphericalRollerBearing}/>
+                 
         </CatalogSection>
 
     </MainSection>
