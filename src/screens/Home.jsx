@@ -121,6 +121,7 @@ export const Home = () => {
         </UspSection>
 
         <CatalogSection>
+            
             <Typography mb={20} gutterBottom mt={6} color={theme.palette.fontColor.light} variant='h3' fontWeight={"300"}>Explore Our Versatile Range</Typography>
             
             <ProductStack name={"Spherical Roller Bearings"} desc={"Experince the epitome of perfomance wiht uec's exceptiona range of spherical roller bearings. Engiinred to exel in even the most demanding industrial application, our bearings deliver unparallred realiabilty, longivity and accuracy. built with carful attentation to detail ,  uec ensuers every bearings exceedcs industry standards, delivering unmatched strength and smooth operation. Engineered to against heavy loads and harsh envirmonets, our spherial roller bearings gurantee optimal perforamnce, minimize downtime ,maximise prodictivity.With UEC, you can trust that your machinery will operate at its peak, backed by our commitemetn to uncompromiosing quality. Elevate your machinery performacne with UEC's spherical roller breaings - just made for you"} img={SphericalRollerBearing}/>

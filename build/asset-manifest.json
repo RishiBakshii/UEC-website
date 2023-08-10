@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.31d6cfe0.css",
-    "main.js": "/static/js/main.79dd75c3.js",
-    "static/media/SphericalRollerBearing.png": "/static/media/SphericalRollerBearing.896a77ee571a9853e729.png",
-    "static/media/CylindricalRollerBearing.png": "/static/media/CylindricalRollerBearing.12f5de5bbed0633c0ef2.png",
-    "index.html": "/index.html",
-    "static/media/landing.svg": "/static/media/landing.1c82fadf3f3595d4b5808f36f8f5c5a7.svg",
-    "static/media/Catalog.svg": "/static/media/Catalog.9dce021f375814e7c9ba97fd1d60c757.svg",
-    "static/media/usp.svg": "/static/media/usp.ac66e3010059025da2d2be8f906f7713.svg",
-    "static/media/about.svg": "/static/media/about.5c9fba9433cd4de864e2d241380998d7.svg",
-    "main.79dd75c3.js.map": "/static/js/main.79dd75c3.js.map"
+    "main.css": "/RishiBakshii/UEC-website/static/css/main.31d6cfe0.css",
+    "main.js": "/RishiBakshii/UEC-website/static/js/main.11970393.js",
+    "static/media/SphericalRollerBearing.png": "/RishiBakshii/UEC-website/static/media/SphericalRollerBearing.896a77ee571a9853e729.png",
+    "static/media/CylindricalRollerBearing.png": "/RishiBakshii/UEC-website/static/media/CylindricalRollerBearing.12f5de5bbed0633c0ef2.png",
+    "index.html": "/RishiBakshii/UEC-website/index.html",
+    "static/media/landing.svg": "/RishiBakshii/UEC-website/static/media/landing.1c506ae463d4512fee0aaa07ad9f42c2.svg",
+    "static/media/Catalog.svg": "/RishiBakshii/UEC-website/static/media/Catalog.9dce021f375814e7c9ba97fd1d60c757.svg",
+    "static/media/usp.svg": "/RishiBakshii/UEC-website/static/media/usp.ac66e3010059025da2d2be8f906f7713.svg",
+    "static/media/about.svg": "/RishiBakshii/UEC-website/static/media/about.5c9fba9433cd4de864e2d241380998d7.svg",
+    "main.11970393.js.map": "/RishiBakshii/UEC-website/static/js/main.11970393.js.map"
   },
   "entrypoints": [
     "static/css/main.31d6cfe0.css",
-    "static/js/main.79dd75c3.js"
+    "static/js/main.11970393.js"
   ]
 }

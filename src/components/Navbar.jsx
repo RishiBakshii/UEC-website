@@ -8,7 +8,7 @@ const CustomToolbar=styled(Toolbar)({
     display:"flex",
     justifyContent:"space-around",
     alignItems:"center",
-    height:"7rem"
+    height:"7rem",
 })
 
 const NavLinks=styled(Typography)({
@@ -24,8 +24,8 @@ export const Navbar = () => {
             <Stack direction={'row'} spacing={7}>
                 <NavLinks variant='p'><Link style={{"textDecoration":'none',color:theme.palette.fontColor.light}} to={'/'}>Home</Link></NavLinks>
                 <NavLinks variant='p'><Link style={{"textDecoration":'none',color:theme.palette.fontColor.light}} to={'/about'}>About</Link></NavLinks>
-                <NavLinks variant='p'>Contact</NavLinks>
-                <NavLinks variant='p'>Services</NavLinks>
+                <NavLinks variant='p'><Link style={{"textDecoration":'none',color:theme.palette.fontColor.light}} to={'/contact'}>Contact</Link></NavLinks>
+                <NavLinks variant='p'><Link style={{"textDecoration":'none',color:theme.palette.fontColor.light}} to={'/services'}>Services</Link></NavLinks>
             </Stack>
         </CustomToolbar>
     </AppBar>

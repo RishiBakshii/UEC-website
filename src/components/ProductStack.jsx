@@ -8,16 +8,18 @@ const CustomStack=styled('div')(({theme})=>({
     backgroundColor:"white",
     borderRadius:".8rem",
     justifyContent:"space-between",
+    alignItems:"center",
     overflow:"hidden",
     padding:"2rem",
-    marginTop:"5rem"
+    marginTop:"5rem",
+    flexWrap:"wrap",
 }))
 
 export const ProductStack = ({name,desc,img}) => {
   return (
     <CustomStack>
 
-    <Stack flex={.87} justifyContent={"center"} alignItems={"center"} padding={1}>
+    <Stack flex={1} justifyContent={"center"} alignItems={"center"} padding={2}>
 
         <Stack alignSelf={"flex-start"}>
             <Typography mb={10} variant='h4' fontWeight={"300"} fontSize={"3.2rem"}>{name}</Typography>
@@ -29,8 +31,8 @@ export const ProductStack = ({name,desc,img}) => {
 
     </Stack>
     
-    <Stack>
-        <img  className='card' src={img} alt={img}></img>
+    <Stack justifyContent={"center"} alignItems={"center"}>
+        <img className='card' src={img} alt={img}></img>
     </Stack>
 
 
